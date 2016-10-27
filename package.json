@@ -1,0 +1,16 @@
+{
+  "name": "child-explorer-widget",
+  "version": "1.0.0",
+  "description": "widget for Child Explorer game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SmartCommunityLab",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "adaro": "^1.0.4",
+    "express": "^4.14.0",
+    "node-rest-client": "^2.0.1"
+  }
+}
