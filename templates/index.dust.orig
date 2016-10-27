@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+<title>Test page</title>
+<link rel="stylesheet" type="text/css" href="css/widget.css">
+
+</head>
+<body><p>Ciao {playerName},hai guadagnato {passi} passi e {alberi} alberi </p></body>
+</html>
+
+

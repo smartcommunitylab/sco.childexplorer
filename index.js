@@ -8,7 +8,13 @@ var config = require('./config');
 var options_auth = { user: config.user, password: config.password };
 var client = new Client(options_auth);
 
-app.engine('dust', adaro.dust());
+var dustOpts = {
+  helpers: [
+    'dustjs-helpers', // so do installed modules
+  ]
+};
+
+app.engine('dust', adaro.dust(dustOpts));
 app.set('view engine', 'dust');
 app.set('view cache', false);
 app.set('views', './templates');
@@ -33,7 +39,11 @@ app.get('/', function (req, res) {
       viewData.passi = e.score;
     }  
     if(e.name === 'alberi') {
-      viewData.alberi = e.score;
+      viewData.alberi = 10;//e.score;
+    }
+    viewData.alberiImgs = [];
+    for(var i = 0; i < viewData.alberi; i++) {
+      viewData.alberiImgs.push("");
     }
   });
   res.render('index', viewData);
