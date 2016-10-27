@@ -39,7 +39,7 @@ app.get('/', function (req, res) {
       viewData.passi = e.score;
     }  
     if(e.name === 'alberi') {
-      viewData.alberi = 10;//e.score;
+      viewData.alberi = e.score;
     }
     viewData.alberiImgs = [];
     for(var i = 0; i < viewData.alberi; i++) {
