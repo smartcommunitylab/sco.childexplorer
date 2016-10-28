@@ -83,13 +83,13 @@
 							<hr/>
 							
 							<div id="badges-images" class="row">
-                {#alberiImgs}
+                {#badges}
                 <div class="col-md-2">
 									<div class="image-badge">
-										<img src="img/tree.png"/>
+										<p>{.}</p>
 									</div>
 								</div>
-								{/alberiImgs}
+								{/badges}
 							</div>
 							
 						</div>

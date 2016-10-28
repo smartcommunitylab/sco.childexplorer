@@ -41,11 +41,8 @@ app.get('/', function (req, res) {
     if(e.name === 'alberi') {
       viewData.alberi = e.score;
     }
-    viewData.alberiImgs = [];
-    for(var i = 0; i < viewData.alberi; i++) {
-      viewData.alberiImgs.push("");
-    }
   });
+  viewData.badges = data.state.BadgeCollectionConcept[0].badgeEarned;
   res.render('index', viewData);
 }).on('error', function (err) {
     res.status(500).send('Internal Error');
