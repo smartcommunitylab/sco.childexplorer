@@ -84,58 +84,48 @@
 							<hr/>
 							{/gt}
 							
-							<!-- <div id="badges-images" class="row">
-                				{#badges}
-                				<div class="col-md-2" align="center">
-									<div class="alert alert-success" role="alert" >class="image-badge"
-										<p>{.}</p>
-									</div>
-								</div>
-								{/badges}
-							</div> -->
-							
 							<div id="my-big-badges">
 								<div id="badges-images" class="row">
 									{#badges}
 		                				{@eq key=. value="Green Medal"}
 		                				<div class="col-md-2" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="2 Green Medal"}
 										<div class="col-md-2" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="3 Green Medal"}
 										<div class="col-md-2" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
-											</div>
-										</div>
-										{/eq}
-										{@eq key=. value="Silver Medal"}
-										<div class="col-md-2" align="center">
-											<div class="circle circle-color-silver" >
-												<p>Silver Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="Bronze Medal"}
 										<div class="col-md-2" align="center">
 											<div class="circle circle-color-bronze" >
-												<p>Bronze Medal</p>
+												<p title="{.}">{.}</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Silver Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-silver" >
+												<p title="{.}">{.}</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="Gold Medal"}
 										<div class="col-md-2" align="center">
 											<div class="circle circle-color-gold" >
-												<p>Gold Medal</p>
+												<p title="{.}">{.}</p>
 											</div>
 										</div>
 										{/eq}
@@ -148,42 +138,42 @@
 		                				{@eq key=. value="Green Medal"}
 		                				<div class="col-xs-4" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="2 Green Medal"}
 										<div class="col-xs-4" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="3 Green Medal"}
 										<div class="col-xs-4" align="center">
 											<div class="circle circle-color-green" >
-												<p>Green Medal</p>
-											</div>
-										</div>
-										{/eq}
-										{@eq key=. value="Silver Medal"}
-										<div class="col-xs-4" align="center">
-											<div class="circle circle-color-silver" >
-												<p>Silver Medal</p>
+												<p title="{.}">Green Medal</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="Bronze Medal"}
 										<div class="col-xs-4" align="center">
 											<div class="circle circle-color-bronze" >
-												<p>Bronze Medal</p>
+												<p title="{.}">{.}</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Silver Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-silver" >
+												<p title="{.}">{.}</p>
 											</div>
 										</div>
 										{/eq}
 										{@eq key=. value="Gold Medal"}
 										<div class="col-xs-4" align="center">
 											<div class="circle circle-color-gold" >
-												<p>Gold Medal</p>
+												<p title="{.}">{.}</p>
 											</div>
 										</div>
 										{/eq}

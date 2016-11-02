@@ -21,10 +21,13 @@
 		border-radius: 60px;
 		font-weight: bold;
 		margin: 15px 0 15px 0;
+		-webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 1);
+    	-moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 1);
+    	box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 1);
 	}
 	
 	.circle p {
-    	line-height: 8;
+    	line-height: 8;	/* used to center badge name in the circle div */
 	}
 	
 	.circle-color-green {
@@ -44,7 +47,6 @@
 		background: #B8860B;
 		color: #FFFFFF;
 	}
-	
 	
 	.image-badge {
 		text-align: center;
@@ -128,7 +130,6 @@
     
 	.nav-tabs.nav-justified {
 		max-height: 45px;
-		/* float: left; */
     }
     .nav-tabs.nav-justified > li {
 		float: left;
@@ -141,14 +142,12 @@
     .nav-justified > li {
 		display: table-cell;
 		width: 33.33%;
-		/* resize: horizontal; */
 		float: left;
     }
     
     .nav-justified-big > li {
 		display: table-cell;
 		width: 100%;
-		/* resize: horizontal; */
 		float: none;
     }
 	
@@ -161,7 +160,6 @@
         border-right: 3px solid #c2c2c2;
       	border-left: 3px solid #c2c2c2;
      	border-bottom: 3px solid #c2c2c2;
-/* 		border-bottom-color: transparent; */
     } 
 	
 	.nav-tabs.nav-justified > li.active > a,
