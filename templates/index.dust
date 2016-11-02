@@ -80,18 +80,116 @@
 								</div>
 							</div>
 							
+							{@gt key=badges.length value=0}
 							<hr/>
+							{/gt}
 							
-							<div id="badges-images" class="row">
-                {#badges}
-                <div class="col-md-2">
-									<div class="image-badge">
+							<!-- <div id="badges-images" class="row">
+                				{#badges}
+                				<div class="col-md-2" align="center">
+									<div class="alert alert-success" role="alert" >class="image-badge"
 										<p>{.}</p>
 									</div>
 								</div>
 								{/badges}
-							</div>
+							</div> -->
 							
+							<div id="my-big-badges">
+								<div id="badges-images" class="row">
+									{#badges}
+		                				{@eq key=. value="Green Medal"}
+		                				<div class="col-md-2" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="2 Green Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="3 Green Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Silver Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-silver" >
+												<p>Silver Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Bronze Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-bronze" >
+												<p>Bronze Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Gold Medal"}
+										<div class="col-md-2" align="center">
+											<div class="circle circle-color-gold" >
+												<p>Gold Medal</p>
+											</div>
+										</div>
+										{/eq}
+									{/badges}
+								</div>
+							</div>
+							<div id="my-small-badges">
+								<div id="badges-images" class="row">
+									{#badges}
+		                				{@eq key=. value="Green Medal"}
+		                				<div class="col-xs-4" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="2 Green Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="3 Green Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-green" >
+												<p>Green Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Silver Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-silver" >
+												<p>Silver Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Bronze Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-bronze" >
+												<p>Bronze Medal</p>
+											</div>
+										</div>
+										{/eq}
+										{@eq key=. value="Gold Medal"}
+										<div class="col-xs-4" align="center">
+											<div class="circle circle-color-gold" >
+												<p>Gold Medal</p>
+											</div>
+										</div>
+										{/eq}
+									{/badges}
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

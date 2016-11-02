@@ -13,9 +13,46 @@
 		margin: 5px 10px 5px 10px;
 	}
 	
+	.circle {
+		width: 120px;
+		height: 120px;
+		-moz-border-radius: 60px;
+		-webkit-border-radius: 60px;
+		border-radius: 60px;
+		font-weight: bold;
+		margin: 15px 0 15px 0;
+	}
+	
+	.circle p {
+    	line-height: 8;
+	}
+	
+	.circle-color-green {
+		background: #008000;
+		color: #FFFFFF;
+	}
+	
+	.circle-color-gold {
+		background: #FFD700 ;
+	}
+	
+	.circle-color-silver {
+		background: #C0C0C0;
+	}
+	
+	.circle-color-bronze {
+		background: #B8860B;
+		color: #FFFFFF;
+	}
+	
+	
 	.image-badge {
 		text-align: center;
 		margin: 10px;
+	}
+	
+	#badges-images {
+		padding-bottom: 20px;
 	}
 	
 	.myheader{
@@ -206,7 +243,15 @@
     }
 	
 	.panel-body {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 20px;
+		padding-right: 25px;
 		padding-bottom: 5px;
 	}
+	
+	#my-small-badges { display: block; }   /* show it elsewhere */
+  	#my-big-badges { display: none; }   /* hide it elsewhere */
+  	
+  	@media (min-width:992px) {
+  		#my-small-badges { display: none; }   /* hide it elsewhere */
+  		#my-big-badges { display: block; }   /* show it elsewhere */
+  	}
