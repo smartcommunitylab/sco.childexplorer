@@ -1,18 +1,28 @@
-	.user-greetings {
-		font-size: 40px;
-		margin: 10px 10px 5px 10px;
-	}
+@font-face {
+  font-family: 'SnigletRegular';
+  src: url('../font/Sniglet-Regular.ttf') format('truetype');
+}
+
+body {
+  font-size: 20pt;
+  font-family: 'SnigletRegular', Fallback, sans-serif;
+}
+
+p.greetings {
+		font-size: 28pt;
+		/*margin: 10px 10px 5px 10px;*/
+}
 	
-	.user-km {
-		font-size: 20px;
-		margin: 5px 10px 5px 10px;
-	}
+p.message {
+   font-size: 24pt;
+}
 	
-	.user-badges {
-		font-size: 20px;
-		margin: 5px 10px 5px 10px;
-	}
-	
+p.congrats {
+ font-size: 25pt;
+ color:  #8cc63f;
+}
+
+
 	.circle {
 		width: 120px;
 		height: 120px;
@@ -245,11 +255,21 @@
 		padding-right: 25px;
 		padding-bottom: 5px;
 	}
-	
-	#my-small-badges { display: block; }   /* show it elsewhere */
-  	#my-big-badges { display: none; }   /* hide it elsewhere */
-  	
-  	@media (min-width:992px) {
-  		#my-small-badges { display: none; }   /* hide it elsewhere */
-  		#my-big-badges { display: block; }   /* show it elsewhere */
-  	}
+
+
+.medal {
+  width: 150px;
+}
+/* TODO 80px medal sotto i 600px*/
+
+
+@media (max-width: 1024px) {
+.medal {
+  width: 110px;
+}
+}
+
+.tree {
+  /*height: auto; */
+  width: 160px; /* <- test*/
+}
