@@ -257,11 +257,23 @@ p.congrats {
 	}
 
 
+.tree-container {
+  display:inline-block;
+  position: relative;
+  z-index:-1;
+  width:30%;
+}
+
+.message-container {
+  display:inline-block;
+  position: relative;
+  z-index:1;
+  width: 40%; 
+  text-align: center;
+}
 .medal {
   width: 150px;
 }
-/* TODO 80px medal sotto i 600px*/
-
 
 @media (max-width: 1024px) {
 .medal {
@@ -269,7 +281,9 @@ p.congrats {
 }
 }
 
-.tree {
-  /*height: auto; */
-  width: 160px; /* <- test*/
+@media (max-width: 600px) {
+.medal {
+  width: 80px;
 }
+}
+
