@@ -18,26 +18,25 @@
 
 <body>
 	<div class="container">
-			  			<div class="row" style="">
+			  			<div class="row">
                 <div class="col-xs-12">
-                  <div class="tree-container">
-                   <img src="img/tree.png" />  
+                  <div class="tree-container left">
+                   <img src="img/tree.png" width="100%" height="100%" class="left"/>  
                   </div>
                   <div class="message-container">
 										<p class="greetings">Ciao {playerName}!</p>
-									  <p class="message">Hai effettuato {passi} pass{@eq key=passi value="1" type="number"}o{:else}i{/eq}</p>
-                    <p class="message">guadagnando {alberi} alber{@eq key=alberi value="1" type="number"}o{:else}i{/eq}</p>
+									  <p class="message">Hai effettuato {passi} pass{@eq key=passi value="1" type="number"}o{:else}i{/eq} guadagnando {alberi} alber{@eq key=alberi value="1" type="number"}o{:else}i{/eq}</p>
 										<p class="congrats">COMPLIMENTI!</p>
                   </div>
-                    <div class="tree-container">
-                   <img src="img/tree.png"/>  
+                  <div class="tree-container right">
+                     <img src="img/tree.png" width="100%" class="right"/>  
                   </div>
 							</div>
             </div>
             							
 						  <div class="row">
 								<div class="col-xs-12">
-                    <img src="img/grass.png" style="display: inline-block;"/>
+                    <div class="grass"></div><!-- img src="img/grass.png" style="display: inline-block;"/-->
                     <p>Qui sotto vedrai le medaglie che hai ottenuto!</p>
 								</div>
 							</div>
@@ -46,32 +45,32 @@
 								<div id="badges-images">
 									{#badges}
 		                				{@eq key=. value="Green Medal"}
-                    <div class="col-xs-2">
+                    <div class="col-xs-4 col-sm-3 col-md-2">
 										  <img src="img/green_medal.png" alt="Green Medal" class="medal"/>
 										</div>
 										{/eq}
 										{@eq key=. value="2 Green Medal"}
-										<div class="col-xs-2">
+										<div class="col-xs-4 col-sm-3 col-md-2">
 											<img src="img/green_medal.png" alt="Green Medal 2" class="medal"/>
 										</div>
 										{/eq}
 										{@eq key=. value="3 Green Medal"}
-										<div class="col-xs-2">
+										<div class="col-xs-4 col-sm-3 col-md-2">
 											<img src="img/green_medal.png" alt="Green Medal 3" class="medal"/>
 										</div>
 										{/eq}
 										{@eq key=. value="Bronze Medal"}
-										<div class="col-xs-2">
+										<div class="col-xs-4 col-sm-3 col-md-2">
 									  	<img src="img/bronze_medal.png" alt="Bronze Medal" class="medal"/>
 										</div>
 										{/eq}
 										{@eq key=. value="Silver Medal"}
-										<div class="col-xs-2">
+										<div class="col-xs-4 col-sm-3 col-md-2">
 											<img src="img/silver_medal.png" alt="Silver Medal" class="medal"/>
 										</div>
 										{/eq}
 										{@eq key=. value="Gold Medal"}
-										<div class="col-xs-2">
+										<div class="col-xs-4 col-sm-3 col-md-2">
 										  <img src="img/gold_medal.png" alt="Gold Medal" class="medal"/>
 										</div>
 										{/eq}
