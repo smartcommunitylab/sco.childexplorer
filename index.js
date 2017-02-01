@@ -34,15 +34,17 @@ app.get('/', function (req, res) {
   }
   client.get("https://dev.smartcommunitylab.it/gamification/gengine/state/${gameId}/"+playerId,args, function (data, response) {
   var viewData = {'playerName' : playerName};
-  data.state.PointConcept.forEach(function(e) {
-    if(e.name === 'passi') {
-      viewData.passi = e.score;
-    }  
-    if(e.name === 'alberi') {
-      viewData.alberi = e.score;
-    }
-  });
-  viewData.badges = data.state.BadgeCollectionConcept[0].badgeEarned;
+  if(data.state) {
+    data.state.PointConcept.forEach(function(e) {
+      if(e.name === 'passi') {
+        viewData.passi = e.score;
+      }  
+      if(e.name === 'alberi') {
+        viewData.alberi = e.score;
+      }
+    });
+    viewData.badges = data.state.BadgeCollectionConcept[0].badgeEarned;
+  }
   res.render('index', viewData);
 }).on('error', function (err) {
     res.status(500).send('Internal Error');
